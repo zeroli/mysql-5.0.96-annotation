@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Classic Debug|Win32">
+      <Configuration>Classic Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Classic|Win32">
+      <Configuration>Classic</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug 98|Win32">
+      <Configuration>Debug 98</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Enterprise Debug|Win32">
+      <Configuration>Enterprise Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Enterprise GPL Debug|Win32">
+      <Configuration>Enterprise GPL Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Enterprise GPL|Win32">
+      <Configuration>Enterprise GPL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Enterprise|Win32">
+      <Configuration>Enterprise</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release 98|Win32">
+      <Configuration>Release 98</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{62E85884-3ACF-4F4C-873B-60B878147890}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Classic Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Classic|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Enterprise Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Enterprise|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Enterprise GPL Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Enterprise GPL|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release 98|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug 98|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Classic Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Classic|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Enterprise Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Enterprise|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Enterprise GPL Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Enterprise GPL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release 98|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug 98|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.28127.55</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\debug_obj\</OutDir>
+    <IntDir>.\debug_obj\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug 98|Win32'">
+    <OutDir>.\debug_obj98\</OutDir>
+    <IntDir>.\debug_obj98\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\release_obj\</OutDir>
+    <IntDir>.\release_obj\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release 98|Win32'">
+    <OutDir>.\release_obj98\</OutDir>
+    <IntDir>.\release_obj98\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Enterprise GPL|Win32'">
+    <OutDir>.\enterprise_gpl_obj\</OutDir>
+    <IntDir>.\enterprise_gpl_obj\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Enterprise GPL Debug|Win32'">
+    <OutDir>.\enterprise_gpl_debug_obj\</OutDir>
+    <IntDir>.\enterprise_gpl_debug_obj\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Enterprise|Win32'">
+    <OutDir>.\enterprise_obj\</OutDir>
+    <IntDir>.\enterprise_obj\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Enterprise Debug|Win32'">
+    <OutDir>.\enterprise_debug_obj\</OutDir>
+    <IntDir>.\enterprise_debug_obj\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Classic|Win32'">
+    <OutDir>.\classic_obj\</OutDir>
+    <IntDir>.\classic_obj\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Classic Debug|Win32'">
+    <OutDir>.\classic_debug_obj\</OutDir>
+    <IntDir>.\classic_debug_obj\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../include;../regex;../extra/yassl/include;../zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>__NT__;_DEBUG;SAFEMALLOC;SAFE_MUTEX;HAVE_ARCHIVE_DB;HAVE_BLACKHOLE_DB;HAVE_EXAMPLE_DB;HAVE_FEDERATED_DB;HAVE_INNOBASE_DB;MYSQL_SERVER;HAVE_DLOPEN;_WINDOWS;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>.\debug_obj/mysqld.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\debug_obj/</AssemblerListingLocation>
+      <ObjectFileName>.\debug_obj/</ObjectFileName>
+      <ProgramDataBaseFileName>.\debug_obj/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;Wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\debug/mysqld-debug.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\debug/mysqld-debug.pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>.\debug/mysqld-debug.map</MapFileName>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <TypeLibraryName>.\debug_obj/mysqld.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug 98|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../include;../regex;../extra/yassl/include;../zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;SAFEMALLOC;SAFE_MUTEX;HAVE_ARCHIVE_DB;HAVE_BLACKHOLE_DB;HAVE_EXAMPLE_DB;HAVE_FEDERATED_DB;HAVE_INNOBASE_DB;MYSQL_SERVER;HAVE_DLOPEN;_WINDOWS;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>.\debug_obj98/mysqld.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\debug_obj98/</AssemblerListingLocation>
+      <ObjectFileName>.\debug_obj98/</ObjectFileName>
+      <ProgramDataBaseFileName>.\debug_obj98/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;Wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\debug/mysqld-debug.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\debug/mysqld-debug.pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>.\debug/mysqld-debug.map</MapFileName>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <TypeLibraryName>.\debug_obj98/mysqld.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../include;../regex;../zlib;../extra/yassl/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>__NT__;DBUG_OFF;NDEBUG;HAVE_ARCHIVE_DB;HAVE_BLACKHOLE_DB;HAVE_EXAMPLE_DB;HAVE_FEDERATED_DB;HAVE_INNOBASE_DB;MYSQL_SERVER;HAVE_DLOPEN;_WINDOWS;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>.\release_obj/mysqld.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\release_obj/</AssemblerListingLocation>
+      <ObjectFileName>.\release_obj/</ObjectFileName>
+      <ProgramDataBaseFileName>.\release_obj/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;Wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\release/mysqld-nt.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\release/mysqld-nt.pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>.\release/mysqld-nt.map</MapFileName>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <TypeLibraryName>.\release_obj/mysqld.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release 98|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../zlib;../include;../regex;../extra/yassl/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DBUG_OFF;NDEBUG;HAVE_ARCHIVE_DB;HAVE_BLACKHOLE_DB;HAVE_EXAMPLE_DB;HAVE_FEDERATED_DB;HAVE_INNOBASE_DB;MYSQL_SERVER;HAVE_DLOPEN;_WINDOWS;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>.\release_obj98/mysqld.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\release_obj98/</AssemblerListingLocation>
+      <ObjectFileName>.\release_obj98/</ObjectFileName>
+      <ProgramDataBaseFileName>.\release_obj98/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;Wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\release/mysqld.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\release/mysqld.pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>.\release/mysqld.map</MapFileName>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <TypeLibraryName>.\release_obj98/mysqld.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Enterprise GPL|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../include;../regex;../zlib;../extra/yassl/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>__NT__;DBUG_OFF;NDEBUG;HAVE_ARCHIVE_DB;HAVE_BLACKHOLE_DB;HAVE_EXAMPLE_DB;HAVE_FEDERATED_DB;HAVE_INNOBASE_DB;MYSQL_SERVER;HAVE_DLOPEN;_WINDOWS;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>.\enterprise_gpl_obj/mysqld.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\enterprise_gpl_obj/</AssemblerListingLocation>
+      <ObjectFileName>.\enterprise_gpl_obj/</ObjectFileName>
+      <ProgramDataBaseFileName>.\enterprise_gpl_obj/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;Wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\release/mysqld-nt.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\release/mysqld-nt.pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>.\release/mysqld-nt.map</MapFileName>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <TypeLibraryName>.\enterprise_gpl_obj/mysqld.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Enterprise GPL Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../include;../regex;../zlib;../extra/yassl/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>__NT__;_DEBUG;SAFEMALLOC;SAFE_MUTEX;HAVE_ARCHIVE_DB;HAVE_BLACKHOLE_DB;HAVE_EXAMPLE_DB;HAVE_FEDERATED_DB;HAVE_INNOBASE_DB;MYSQL_SERVER;HAVE_DLOPEN;_WINDOWS;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>.\enterprise_gpl_debug_obj/mysqld.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\enterprise_gpl_debug_obj/</AssemblerListingLocation>
+      <ObjectFileName>.\enterprise_gpl_debug_obj/</ObjectFileName>
+      <ProgramDataBaseFileName>.\enterprise_gpl_debug_obj/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;Wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\debug/mysqld-debug.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\debug/mysqld-debug.pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>.\debug/mysqld-debug.map</MapFileName>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <TypeLibraryName>.\enterprise_gpl_debug_obj/mysqld.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Enterprise|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../include;../regex;../zlib;../extra/yassl/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>__NT__;DBUG_OFF;NDEBUG;HAVE_ARCHIVE_DB;HAVE_BLACKHOLE_DB;HAVE_EXAMPLE_DB;HAVE_FEDERATED_DB;HAVE_INNOBASE_DB;MYSQL_SERVER;HAVE_DLOPEN;_WINDOWS;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>.\enterprise_obj/mysqld.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\enterprise_obj/</AssemblerListingLocation>
+      <ObjectFileName>.\enterprise_obj/</ObjectFileName>
+      <ProgramDataBaseFileName>.\enterprise_obj/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;Wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\release/mysqld-nt.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\release/mysqld-nt.pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>.\release/mysqld-nt.map</MapFileName>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <TypeLibraryName>.\enterprise_obj/mysqld.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Enterprise Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../include;../regex;../zlib;../extra/yassl/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>__NT__;_DEBUG;SAFEMALLOC;SAFE_MUTEX;HAVE_ARCHIVE_DB;HAVE_BLACKHOLE_DB;HAVE_EXAMPLE_DB;HAVE_FEDERATED_DB;HAVE_INNOBASE_DB;MYSQL_SERVER;HAVE_DLOPEN;_WINDOWS;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>.\enterprise_debug_obj/mysqld.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\enterprise_debug_obj/</AssemblerListingLocation>
+      <ObjectFileName>.\enterprise_debug_obj/</ObjectFileName>
+      <ProgramDataBaseFileName>.\enterprise_debug_obj/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;Wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\debug/mysqld-debug.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\debug/mysqld-debug.pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>.\debug/mysqld-debug.map</MapFileName>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <TypeLibraryName>.\enterprise_debug_obj/mysqld.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Classic|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../include;../regex;../zlib;../extra/yassl/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>__NT__;DBUG_OFF;NDEBUG;HAVE_ARCHIVE_DB;HAVE_BLACKHOLE_DB;HAVE_EXAMPLE_DB;HAVE_FEDERATED_DB;MYSQL_SERVER;HAVE_DLOPEN;_WINDOWS;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>.\classic_obj/mysqld.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\classic_obj/</AssemblerListingLocation>
+      <ObjectFileName>.\classic_obj/</ObjectFileName>
+      <ProgramDataBaseFileName>.\classic_obj/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;Wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\release/mysqld-nt.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\release/mysqld-nt.pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>.\release/mysqld-nt.map</MapFileName>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <TypeLibraryName>.\classic_obj/mysqld.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Classic Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../include;../regex;../zlib;../extra/yassl/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>__NT__;_DEBUG;SAFEMALLOC;SAFE_MUTEX;HAVE_ARCHIVE_DB;HAVE_BLACKHOLE_DB;HAVE_EXAMPLE_DB;HAVE_FEDERATED_DB;MYSQL_SERVER;HAVE_DLOPEN;_WINDOWS;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>.\classic_debug_obj/mysqld.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\classic_debug_obj/</AssemblerListingLocation>
+      <ObjectFileName>.\classic_debug_obj/</ObjectFileName>
+      <ProgramDataBaseFileName>.\classic_debug_obj/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;Wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\debug/mysqld-debug.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\debug/mysqld-debug.pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>.\debug/mysqld-debug.map</MapFileName>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <TypeLibraryName>.\classic_debug_obj/mysqld.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\libmysql\errmsg.c" />
+    <ClCompile Include="..\myisammrg\myrg_rnext_same.c" />
+    <ClCompile Include="client.c" />
+    <ClCompile Include="derror.cpp" />
+    <ClCompile Include="des_key_file.cpp" />
+    <ClCompile Include="discover.cpp" />
+    <ClCompile Include="examples\ha_example.cpp" />
+    <ClCompile Include="field.cpp" />
+    <ClCompile Include="field_conv.cpp" />
+    <ClCompile Include="filesort.cpp" />
+    <ClCompile Include="gstream.cpp" />
+    <ClCompile Include="handler.cpp" />
+    <ClCompile Include="hash_filo.cpp" />
+    <ClCompile Include="ha_archive.cpp" />
+    <ClCompile Include="ha_berkeley.cpp" />
+    <ClCompile Include="ha_blackhole.cpp" />
+    <ClCompile Include="ha_federated.cpp" />
+    <ClCompile Include="ha_heap.cpp" />
+    <ClCompile Include="ha_innodb.cpp" />
+    <ClCompile Include="ha_myisam.cpp" />
+    <ClCompile Include="ha_myisammrg.cpp" />
+    <ClCompile Include="hostname.cpp" />
+    <ClCompile Include="init.cpp" />
+    <ClCompile Include="item.cpp" />
+    <ClCompile Include="item_buff.cpp" />
+    <ClCompile Include="item_cmpfunc.cpp" />
+    <ClCompile Include="item_create.cpp" />
+    <ClCompile Include="item_func.cpp" />
+    <ClCompile Include="item_geofunc.cpp" />
+    <ClCompile Include="item_row.cpp" />
+    <ClCompile Include="item_strfunc.cpp" />
+    <ClCompile Include="item_subselect.cpp" />
+    <ClCompile Include="item_sum.cpp" />
+    <ClCompile Include="item_timefunc.cpp" />
+    <ClCompile Include="item_uniq.cpp" />
+    <ClCompile Include="key.cpp" />
+    <ClCompile Include="lock.cpp" />
+    <ClCompile Include="log.cpp" />
+    <ClCompile Include="log_event.cpp" />
+    <ClCompile Include="mf_iocache.cpp" />
+    <ClCompile Include="mysqld.cpp" />
+    <ClCompile Include="my_decimal.cpp" />
+    <ClCompile Include="my_time.c" />
+    <ClCompile Include="my_user.c" />
+    <ClCompile Include="net_serv.cpp" />
+    <ClCompile Include="nt_servc.cpp" />
+    <ClCompile Include="opt_range.cpp" />
+    <ClCompile Include="OPT_SUM.cpp" />
+    <ClCompile Include="pack.c" />
+    <ClCompile Include="parse_file.cpp" />
+    <ClCompile Include="password.c" />
+    <ClCompile Include="procedure.cpp" />
+    <ClCompile Include="protocol.cpp" />
+    <ClCompile Include="records.cpp" />
+    <ClCompile Include="repl_failsafe.cpp" />
+    <ClCompile Include="set_var.cpp" />
+    <ClCompile Include="slave.cpp" />
+    <ClCompile Include="sp.cpp" />
+    <ClCompile Include="spatial.cpp" />
+    <ClCompile Include="sp_cache.cpp" />
+    <ClCompile Include="sp_head.cpp" />
+    <ClCompile Include="sp_pcontext.cpp" />
+    <ClCompile Include="sp_rcontext.cpp" />
+    <ClCompile Include="sql_acl.cpp" />
+    <ClCompile Include="sql_analyse.cpp" />
+    <ClCompile Include="sql_base.cpp" />
+    <ClCompile Include="sql_cache.cpp" />
+    <ClCompile Include="sql_class.cpp" />
+    <ClCompile Include="sql_client.cpp" />
+    <ClCompile Include="sql_crypt.cpp" />
+    <ClCompile Include="sql_cursor.cpp" />
+    <ClCompile Include="sql_db.cpp" />
+    <ClCompile Include="sql_delete.cpp" />
+    <ClCompile Include="sql_derived.cpp" />
+    <ClCompile Include="sql_do.cpp" />
+    <ClCompile Include="sql_error.cpp" />
+    <ClCompile Include="sql_handler.cpp" />
+    <ClCompile Include="sql_help.cpp" />
+    <ClCompile Include="sql_insert.cpp" />
+    <ClCompile Include="sql_lex.cpp" />
+    <ClCompile Include="sql_list.cpp" />
+    <ClCompile Include="sql_load.cpp" />
+    <ClCompile Include="sql_locale.cpp" />
+    <ClCompile Include="sql_manager.cpp" />
+    <ClCompile Include="sql_map.cpp" />
+    <ClCompile Include="sql_parse.cpp" />
+    <ClCompile Include="sql_prepare.cpp" />
+    <ClCompile Include="sql_profile.cpp" />
+    <ClCompile Include="sql_rename.cpp" />
+    <ClCompile Include="sql_repl.cpp" />
+    <ClCompile Include="sql_select.cpp" />
+    <ClCompile Include="sql_show.cpp" />
+    <ClCompile Include="sql_state.c" />
+    <ClCompile Include="sql_string.cpp" />
+    <ClCompile Include="sql_table.cpp" />
+    <ClCompile Include="sql_test.cpp" />
+    <ClCompile Include="sql_trigger.cpp" />
+    <ClCompile Include="sql_udf.cpp" />
+    <ClCompile Include="sql_union.cpp" />
+    <ClCompile Include="sql_update.cpp" />
+    <ClCompile Include="sql_view.cpp" />
+    <ClCompile Include="sql_yacc.cpp" />
+    <ClCompile Include="strfunc.cpp" />
+    <ClCompile Include="table.cpp" />
+    <ClCompile Include="thr_malloc.cpp" />
+    <ClCompile Include="time.cpp" />
+    <ClCompile Include="tztime.cpp" />
+    <ClCompile Include="uniques.cpp" />
+    <ClCompile Include="unireg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="hash_filo.h" />
+    <ClInclude Include="nt_servc.h" />
+    <ClInclude Include="opt_range.h" />
+    <ClInclude Include="sql_crypt.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="message.mc">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Classic Debug|Win32'">mc message.mc
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Classic Debug|Win32'">message.rc;message.h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug 98|Win32'">mc message.mc
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug 98|Win32'">message.rc;message.h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mc message.mc
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">message.rc;message.h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Enterprise Debug|Win32'">mc message.mc
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Enterprise Debug|Win32'">message.rc;message.h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Enterprise GPL Debug|Win32'">mc message.mc
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Enterprise GPL Debug|Win32'">message.rc;message.h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Enterprise GPL|Win32'">mc message.mc
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Enterprise GPL|Win32'">message.rc;message.h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Enterprise|Win32'">mc message.mc
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Enterprise|Win32'">message.rc;message.h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release 98|Win32'">mc message.mc
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release 98|Win32'">message.rc;message.h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mc message.mc
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">message.rc;message.h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Classic|Win32'">mc message.mc
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Classic|Win32'">message.rc;message.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="message.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\innobase\innobase.vcxproj">
+      <Project>{13d37150-54d0-46c5-9519-03923243c7c7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\regex\regex.vcxproj">
+      <Project>{207e9014-c4d1-4f6d-b76f-bc7dd7e31113}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\strings\strings.vcxproj">
+      <Project>{eec1300b-85a5-497c-b3e1-f708021df859}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

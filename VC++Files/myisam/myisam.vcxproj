@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="TLS_DEBUG|Win32">
+      <Configuration>TLS_DEBUG</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="TLS|Win32">
+      <Configuration>TLS</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{262280A8-37D5-4037-BDFB-242468DFB3D2}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='TLS|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='TLS_DEBUG|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='TLS|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='TLS_DEBUG|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.28127.55</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\debug_obj\</OutDir>
+    <IntDir>.\debug_obj\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\release_obj\</OutDir>
+    <IntDir>.\release_obj\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='TLS_DEBUG|Win32'">
+    <OutDir>.\TLS_DEBUG\</OutDir>
+    <IntDir>.\TLS_DEBUG\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='TLS|Win32'">
+    <OutDir>.\TLS\</OutDir>
+    <IntDir>.\TLS\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;SAFEMALLOC;SAFE_MUTEX;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>.\debug_obj/myisam.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\debug_obj/</AssemblerListingLocation>
+      <ObjectFileName>.\debug_obj/</ObjectFileName>
+      <ProgramDataBaseFileName>.\debug_obj/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <OutputFile>.\debug_obj\myisam.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DBUG_OFF;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>.\release_obj/myisam.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\release_obj/</AssemblerListingLocation>
+      <ObjectFileName>.\release_obj/</ObjectFileName>
+      <ProgramDataBaseFileName>.\release_obj/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <OutputFile>.\release_obj\myisam.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='TLS_DEBUG|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;SAFEMALLOC;SAFE_MUTEX;_WINDOWS;USE_TLS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>.\TLS_DEBUG/myisam.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\TLS_DEBUG/</AssemblerListingLocation>
+      <ObjectFileName>.\debug_obj/</ObjectFileName>
+      <ProgramDataBaseFileName>.\debug_obj/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <OutputFile>.\debug_obj\myisam_tls.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='TLS|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DBUG_OFF;NDEBUG;_WINDOWS;USE_TLS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>.\TLS/myisam.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\TLS/</AssemblerListingLocation>
+      <ObjectFileName>.\TLS/</ObjectFileName>
+      <ProgramDataBaseFileName>.\TLS/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <OutputFile>.\release_obj\myisam_tls.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ft_boolean_search.c" />
+    <ClCompile Include="ft_nlq_search.c" />
+    <ClCompile Include="ft_parser.c" />
+    <ClCompile Include="ft_static.c" />
+    <ClCompile Include="ft_stem.c" />
+    <ClCompile Include="ft_stopwords.c" />
+    <ClCompile Include="ft_update.c" />
+    <ClCompile Include="mi_cache.c" />
+    <ClCompile Include="mi_changed.c" />
+    <ClCompile Include="mi_check.c" />
+    <ClCompile Include="mi_checksum.c" />
+    <ClCompile Include="mi_close.c" />
+    <ClCompile Include="mi_create.c" />
+    <ClCompile Include="mi_dbug.c" />
+    <ClCompile Include="mi_delete.c" />
+    <ClCompile Include="mi_delete_all.c" />
+    <ClCompile Include="mi_delete_table.c" />
+    <ClCompile Include="mi_dynrec.c" />
+    <ClCompile Include="mi_extra.c" />
+    <ClCompile Include="mi_info.c" />
+    <ClCompile Include="mi_key.c" />
+    <ClCompile Include="mi_keycache.c" />
+    <ClCompile Include="mi_locking.c" />
+    <ClCompile Include="mi_log.c" />
+    <ClCompile Include="mi_open.c" />
+    <ClCompile Include="mi_packrec.c" />
+    <ClCompile Include="mi_page.c" />
+    <ClCompile Include="mi_panic.c" />
+    <ClCompile Include="mi_preload.c" />
+    <ClCompile Include="mi_range.c" />
+    <ClCompile Include="mi_rename.c" />
+    <ClCompile Include="mi_rfirst.c" />
+    <ClCompile Include="mi_rkey.c" />
+    <ClCompile Include="mi_rlast.c" />
+    <ClCompile Include="mi_rnext.c" />
+    <ClCompile Include="mi_rnext_same.c" />
+    <ClCompile Include="mi_rprev.c" />
+    <ClCompile Include="mi_rrnd.c" />
+    <ClCompile Include="mi_rsame.c" />
+    <ClCompile Include="mi_rsamepos.c" />
+    <ClCompile Include="mi_scan.c" />
+    <ClCompile Include="mi_search.c" />
+    <ClCompile Include="mi_static.c" />
+    <ClCompile Include="mi_statrec.c" />
+    <ClCompile Include="mi_unique.c" />
+    <ClCompile Include="mi_update.c" />
+    <ClCompile Include="mi_write.c" />
+    <ClCompile Include="rt_index.c" />
+    <ClCompile Include="rt_key.c" />
+    <ClCompile Include="rt_mbr.c" />
+    <ClCompile Include="rt_split.c" />
+    <ClCompile Include="sort.c" />
+    <ClCompile Include="sp_key.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ft_eval.h" />
+    <ClInclude Include="myisamdef.h" />
+    <ClInclude Include="rt_index.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

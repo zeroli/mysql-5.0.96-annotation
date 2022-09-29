@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0cbff3fd-aeb9-4ba6-895a-2765e9de5090}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{5050a3d0-de2c-43ba-b657-b6d9fcb2f968}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ft_boolean_search.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ft_nlq_search.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ft_parser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ft_static.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ft_stem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ft_stopwords.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ft_update.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_cache.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_changed.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_check.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_checksum.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_close.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_create.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_dbug.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_delete.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_delete_all.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_delete_table.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_dynrec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_extra.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_info.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_key.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_keycache.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_locking.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_log.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_open.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_packrec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_page.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_panic.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_preload.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_range.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_rename.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_rfirst.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_rkey.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_rlast.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_rnext.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_rnext_same.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_rprev.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_rrnd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_rsame.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_rsamepos.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_scan.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_search.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_static.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_statrec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_unique.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_update.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mi_write.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_index.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_key.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_mbr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_split.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sort.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sp_key.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ft_eval.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="myisamdef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rt_index.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

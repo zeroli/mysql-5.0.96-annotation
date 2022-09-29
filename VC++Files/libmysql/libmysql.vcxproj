@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{1FC6EB72-1D0F-4E40-8851-1CC5DEB94F0F}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.28127.55</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\debug_obj\</OutDir>
+    <IntDir>.\debug_obj\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\release_obj\</OutDir>
+    <IntDir>.\release_obj\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;..\include;../zlib;../extra/yassl/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;SAFE_MUTEX;USE_TLS;MYSQL_CLIENT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>.\debug_obj/libmysql.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\debug_obj/</AssemblerListingLocation>
+      <ObjectFileName>.\debug_obj/</ObjectFileName>
+      <ProgramDataBaseFileName>.\debug_obj/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>wsock32.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\debug/libmysql.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ModuleDefinitionFile>.\Libmysql.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\debug/libmysql.pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>.\debug/libmysql.map</MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>.\debug/libmysql.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\debug_obj/libmysql.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>.;..\include;../zlib;../extra/yassl/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DBUG_OFF;NDEBUG;USE_TLS;MYSQL_CLIENT;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>.\release_obj/libmysql.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\release_obj/</AssemblerListingLocation>
+      <ObjectFileName>.\release_obj/</ObjectFileName>
+      <ProgramDataBaseFileName>.\release_obj/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>wsock32.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\release/libmysql.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ModuleDefinitionFile>.\Libmysql.def</ModuleDefinitionFile>
+      <ProgramDatabaseFile>.\release/libmysql.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>.\release/libmysql.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\release_obj/libmysql.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\client\sql_string.cpp" />
+    <ClCompile Include="..\dbug\dbug.c" />
+    <ClCompile Include="..\mysys\array.c" />
+    <ClCompile Include="..\mysys\charset-def.c" />
+    <ClCompile Include="..\mysys\charset.c" />
+    <ClCompile Include="..\mysys\default.c" />
+    <ClCompile Include="..\mysys\default_modify.c" />
+    <ClCompile Include="..\mysys\errors.c" />
+    <ClCompile Include="..\mysys\list.c" />
+    <ClCompile Include="..\mysys\mf_dirname.c" />
+    <ClCompile Include="..\mysys\mf_fn_ext.c" />
+    <ClCompile Include="..\mysys\mf_format.c" />
+    <ClCompile Include="..\mysys\mf_loadpath.c" />
+    <ClCompile Include="..\mysys\mf_pack.c" />
+    <ClCompile Include="..\mysys\mf_path.c" />
+    <ClCompile Include="..\mysys\mf_unixpath.c" />
+    <ClCompile Include="..\mysys\mf_wcomp.c" />
+    <ClCompile Include="..\mysys\mulalloc.c" />
+    <ClCompile Include="..\mysys\my_access.c" />
+    <ClCompile Include="..\mysys\my_alloc.c" />
+    <ClCompile Include="..\mysys\my_chsize.c" />
+    <ClCompile Include="..\mysys\my_compress.c" />
+    <ClCompile Include="..\mysys\my_create.c" />
+    <ClCompile Include="..\mysys\my_delete.c" />
+    <ClCompile Include="..\mysys\my_div.c" />
+    <ClCompile Include="..\mysys\my_error.c" />
+    <ClCompile Include="..\mysys\my_fopen.c" />
+    <ClCompile Include="..\mysys\my_fstream.c" />
+    <ClCompile Include="..\mysys\my_getopt.c" />
+    <ClCompile Include="..\mysys\my_getwd.c" />
+    <ClCompile Include="..\mysys\my_init.c" />
+    <ClCompile Include="..\mysys\my_lib.c" />
+    <ClCompile Include="..\mysys\my_malloc.c" />
+    <ClCompile Include="..\mysys\my_messnc.c" />
+    <ClCompile Include="..\mysys\my_net.c" />
+    <ClCompile Include="..\mysys\my_once.c" />
+    <ClCompile Include="..\mysys\my_open.c" />
+    <ClCompile Include="..\mysys\my_pthread.c" />
+    <ClCompile Include="..\mysys\my_read.c" />
+    <ClCompile Include="..\mysys\my_realloc.c" />
+    <ClCompile Include="..\mysys\my_rename.c" />
+    <ClCompile Include="..\mysys\my_seek.c" />
+    <ClCompile Include="..\mysys\my_static.c" />
+    <ClCompile Include="..\mysys\my_symlink.c" />
+    <ClCompile Include="..\mysys\my_symlink2.c" />
+    <ClCompile Include="..\mysys\my_thr_init.c" />
+    <ClCompile Include="..\mysys\my_wincond.c" />
+    <ClCompile Include="..\mysys\my_winthread.c" />
+    <ClCompile Include="..\mysys\my_write.c" />
+    <ClCompile Include="..\mysys\safemalloc.c" />
+    <ClCompile Include="..\mysys\sha1.c" />
+    <ClCompile Include="..\mysys\string.c" />
+    <ClCompile Include="..\mysys\thr_mutex.c" />
+    <ClCompile Include="..\mysys\typelib.c" />
+    <ClCompile Include="..\sql\net_serv.cpp" />
+    <ClCompile Include="..\strings\bchange.c" />
+    <ClCompile Include="..\strings\bmove.c" />
+    <ClCompile Include="..\strings\bmove_upp.c" />
+    <ClCompile Include="..\strings\ctype-big5.c" />
+    <ClCompile Include="..\strings\ctype-bin.c" />
+    <ClCompile Include="..\strings\ctype-cp932.c" />
+    <ClCompile Include="..\strings\ctype-czech.c" />
+    <ClCompile Include="..\strings\ctype-eucjpms.c" />
+    <ClCompile Include="..\strings\ctype-euc_kr.c" />
+    <ClCompile Include="..\strings\ctype-extra.c" />
+    <ClCompile Include="..\strings\ctype-gb2312.c" />
+    <ClCompile Include="..\strings\ctype-gbk.c" />
+    <ClCompile Include="..\strings\ctype-latin1.c" />
+    <ClCompile Include="..\strings\ctype-mb.c" />
+    <ClCompile Include="..\strings\ctype-simple.c" />
+    <ClCompile Include="..\strings\ctype-sjis.c" />
+    <ClCompile Include="..\strings\ctype-tis620.c" />
+    <ClCompile Include="..\strings\ctype-uca.c" />
+    <ClCompile Include="..\strings\ctype-ucs2.c" />
+    <ClCompile Include="..\strings\ctype-ujis.c" />
+    <ClCompile Include="..\strings\ctype-utf8.c" />
+    <ClCompile Include="..\strings\ctype-win1250ch.c" />
+    <ClCompile Include="..\strings\ctype.c" />
+    <ClCompile Include="..\strings\int2str.c" />
+    <ClCompile Include="..\strings\is_prefix.c" />
+    <ClCompile Include="..\strings\llstr.c" />
+    <ClCompile Include="..\strings\longlong2str.c" />
+    <ClCompile Include="..\strings\my_strtoll10.c" />
+    <ClCompile Include="..\strings\my_vsnprintf.c" />
+    <ClCompile Include="..\strings\str2int.c" />
+    <ClCompile Include="..\strings\strcend.c" />
+    <ClCompile Include="..\strings\strcont.c" />
+    <ClCompile Include="..\strings\strend.c" />
+    <ClCompile Include="..\strings\strfill.c" />
+    <ClCompile Include="..\strings\strinstr.c" />
+    <ClCompile Include="..\strings\strmake.c" />
+    <ClCompile Include="..\strings\strmov.c" />
+    <ClCompile Include="..\strings\strnlen.c" />
+    <ClCompile Include="..\strings\strnmov.c" />
+    <ClCompile Include="..\strings\strtod.c" />
+    <ClCompile Include="..\strings\strtoll.c" />
+    <ClCompile Include="..\strings\strxmov.c" />
+    <ClCompile Include="..\strings\strxnmov.c" />
+    <ClCompile Include="..\strings\xml.c" />
+    <ClCompile Include="..\vio\vio.c" />
+    <ClCompile Include="..\vio\viosocket.c" />
+    <ClCompile Include="..\vio\viossl.c" />
+    <ClCompile Include="..\vio\viosslfactories.c" />
+    <ClCompile Include="client.c" />
+    <ClCompile Include="dll.c" />
+    <ClCompile Include="errmsg.c" />
+    <ClCompile Include="get_password.c" />
+    <ClCompile Include="libmysql.c" />
+    <ClCompile Include="my_time.c" />
+    <ClCompile Include="pack.c" />
+    <ClCompile Include="password.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Libmysql.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\client\mysys_priv.h" />
+    <ClInclude Include="..\client\sql_string.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\strings\strings.vcxproj">
+      <Project>{eec1300b-85a5-497c-b3e1-f708021df859}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

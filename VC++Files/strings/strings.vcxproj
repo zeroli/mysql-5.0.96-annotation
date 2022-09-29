@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{EEC1300B-85A5-497C-B3E1-F708021DF859}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.28127.55</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\release_obj\</OutDir>
+    <IntDir>.\release_obj\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\debug_obj\</OutDir>
+    <IntDir>.\debug_obj\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DBUG_OFF;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>.\release_obj/strings.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\release_obj/</AssemblerListingLocation>
+      <ObjectFileName>.\release_obj/</ObjectFileName>
+      <ProgramDataBaseFileName>.\release_obj/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <OutputFile>.\release/strings.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;SAFEMALLOC;SAFE_MUTEX;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>.\debug_obj/strings.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\debug_obj/</AssemblerListingLocation>
+      <ObjectFileName>.\debug_obj/</ObjectFileName>
+      <ProgramDataBaseFileName>.\debug_obj/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <OutputFile>.\debug/strings.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="bchange.c" />
+    <ClCompile Include="bcmp.c" />
+    <ClCompile Include="bfill.c" />
+    <ClCompile Include="bmove512.c" />
+    <ClCompile Include="bmove_upp.c" />
+    <ClCompile Include="ctype-big5.c" />
+    <ClCompile Include="ctype-bin.c" />
+    <ClCompile Include="ctype-cp932.c" />
+    <ClCompile Include="ctype-czech.c" />
+    <ClCompile Include="ctype-eucjpms.c" />
+    <ClCompile Include="ctype-euc_kr.c" />
+    <ClCompile Include="ctype-extra.c" />
+    <ClCompile Include="ctype-gb2312.c" />
+    <ClCompile Include="ctype-gbk.c" />
+    <ClCompile Include="ctype-latin1.c" />
+    <ClCompile Include="ctype-mb.c" />
+    <ClCompile Include="ctype-simple.c" />
+    <ClCompile Include="ctype-sjis.c" />
+    <ClCompile Include="ctype-tis620.c" />
+    <ClCompile Include="ctype-uca.c" />
+    <ClCompile Include="ctype-ucs2.c" />
+    <ClCompile Include="ctype-ujis.c" />
+    <ClCompile Include="ctype-utf8.c" />
+    <ClCompile Include="ctype-win1250ch.c" />
+    <ClCompile Include="ctype.c" />
+    <ClCompile Include="decimal.c" />
+    <ClCompile Include="int2str.c" />
+    <ClCompile Include="is_prefix.c" />
+    <ClCompile Include="llstr.c" />
+    <ClCompile Include="longlong2str.c" />
+    <ClCompile Include="my_strtoll10.c" />
+    <ClCompile Include="my_vsnprintf.c" />
+    <ClCompile Include="r_strinstr.c" />
+    <ClCompile Include="str2int.c" />
+    <ClCompile Include="strcend.c" />
+    <ClCompile Include="strend.c" />
+    <ClCompile Include="strfill.c" />
+    <ClCompile Include="strmake.c" />
+    <ClCompile Include="strmov.c" />
+    <ClCompile Include="strnmov.c" />
+    <ClCompile Include="strtod.c" />
+    <ClCompile Include="strtol.c" />
+    <ClCompile Include="strtoll.c" />
+    <ClCompile Include="strtoul.c" />
+    <ClCompile Include="strtoull.c" />
+    <ClCompile Include="strxmov.c" />
+    <ClCompile Include="strxnmov.c" />
+    <ClCompile Include="str_alloc.c" />
+    <ClCompile Include="xml.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,19 @@
+﻿  Performing Custom Build Tools
+  MC: Compiling message.mc
+  errmsg.c
+c1 : fatal error C1083: Cannot open source file: '..\libmysql\errmsg.c': No such file or directory
+  myrg_rnext_same.c
+c1 : fatal error C1083: Cannot open source file: '..\myisammrg\myrg_rnext_same.c': No such file or directory
+  client.c
+c1 : fatal error C1083: Cannot open source file: 'client.c': No such file or directory
+  my_time.c
+c1 : fatal error C1083: Cannot open source file: 'my_time.c': No such file or directory
+  my_user.c
+c1 : fatal error C1083: Cannot open source file: 'my_user.c': No such file or directory
+  pack.c
+c1 : fatal error C1083: Cannot open source file: 'pack.c': No such file or directory
+  password.c
+c1 : fatal error C1083: Cannot open source file: 'password.c': No such file or directory
+  sql_state.c
+c1 : fatal error C1083: Cannot open source file: 'sql_state.c': No such file or directory
+  Generating Code...

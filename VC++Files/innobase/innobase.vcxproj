@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{13D37150-54D0-46C5-9519-03923243C7C7}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.28127.55</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\debug_obj\</OutDir>
+    <IntDir>.\debug_obj\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\release_obj\</OutDir>
+    <IntDir>.\release_obj\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../innobase/include;../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_LIB;_WIN32;WIN32;MYSQL_SERVER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>.\debug_obj/innobase.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\debug_obj/</AssemblerListingLocation>
+      <ObjectFileName>.\debug_obj/</ObjectFileName>
+      <ProgramDataBaseFileName>.\debug_obj/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <OutputFile>.\debug_obj\innodb.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0416</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../innobase/include;../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_LIB;_WIN32;WIN32;MYSQL_SERVER;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>.\release_obj/innobase.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\release_obj/</AssemblerListingLocation>
+      <ObjectFileName>.\release_obj/</ObjectFileName>
+      <ProgramDataBaseFileName>.\release_obj/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <OutputFile>.\release_obj\innodb.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0416</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="btr\btr0btr.c" />
+    <ClCompile Include="btr\btr0cur.c" />
+    <ClCompile Include="btr\btr0pcur.c" />
+    <ClCompile Include="btr\btr0sea.c" />
+    <ClCompile Include="buf\buf0buf.c" />
+    <ClCompile Include="buf\buf0flu.c" />
+    <ClCompile Include="buf\buf0lru.c" />
+    <ClCompile Include="buf\buf0rea.c" />
+    <ClCompile Include="data\data0data.c" />
+    <ClCompile Include="data\data0type.c" />
+    <ClCompile Include="dict\dict0boot.c" />
+    <ClCompile Include="dict\dict0crea.c" />
+    <ClCompile Include="dict\dict0dict.c" />
+    <ClCompile Include="dict\dict0load.c" />
+    <ClCompile Include="dict\dict0mem.c" />
+    <ClCompile Include="dyn\dyn0dyn.c" />
+    <ClCompile Include="eval\eval0eval.c" />
+    <ClCompile Include="eval\eval0proc.c" />
+    <ClCompile Include="fil\fil0fil.c" />
+    <ClCompile Include="fsp\fsp0fsp.c" />
+    <ClCompile Include="fut\fut0fut.c" />
+    <ClCompile Include="fut\fut0lst.c" />
+    <ClCompile Include="ha\ha0ha.c" />
+    <ClCompile Include="ha\hash0hash.c" />
+    <ClCompile Include="ibuf\ibuf0ibuf.c" />
+    <ClCompile Include="lock\lock0lock.c" />
+    <ClCompile Include="log\log0log.c" />
+    <ClCompile Include="log\log0recv.c" />
+    <ClCompile Include="mach\mach0data.c" />
+    <ClCompile Include="mem\mem0mem.c" />
+    <ClCompile Include="mem\mem0pool.c" />
+    <ClCompile Include="mtr\mtr0log.c" />
+    <ClCompile Include="mtr\mtr0mtr.c" />
+    <ClCompile Include="os\os0file.c" />
+    <ClCompile Include="os\os0proc.c" />
+    <ClCompile Include="os\os0sync.c" />
+    <ClCompile Include="os\os0thread.c" />
+    <ClCompile Include="page\page0cur.c" />
+    <ClCompile Include="page\page0page.c" />
+    <ClCompile Include="pars\lexyy.c" />
+    <ClCompile Include="pars\pars0grm.c" />
+    <ClCompile Include="pars\pars0opt.c" />
+    <ClCompile Include="pars\pars0pars.c" />
+    <ClCompile Include="pars\pars0sym.c" />
+    <ClCompile Include="que\que0que.c" />
+    <ClCompile Include="read\read0read.c" />
+    <ClCompile Include="rem\rem0cmp.c" />
+    <ClCompile Include="rem\rem0rec.c" />
+    <ClCompile Include="row\row0ins.c" />
+    <ClCompile Include="row\row0mysql.c" />
+    <ClCompile Include="row\row0purge.c" />
+    <ClCompile Include="row\row0row.c" />
+    <ClCompile Include="row\row0sel.c" />
+    <ClCompile Include="row\row0uins.c" />
+    <ClCompile Include="row\row0umod.c" />
+    <ClCompile Include="row\row0undo.c" />
+    <ClCompile Include="row\row0upd.c" />
+    <ClCompile Include="row\row0vers.c" />
+    <ClCompile Include="srv\srv0que.c" />
+    <ClCompile Include="srv\srv0srv.c" />
+    <ClCompile Include="srv\srv0start.c" />
+    <ClCompile Include="sync\sync0arr.c" />
+    <ClCompile Include="sync\sync0rw.c" />
+    <ClCompile Include="sync\sync0sync.c" />
+    <ClCompile Include="thr\thr0loc.c" />
+    <ClCompile Include="trx\trx0purge.c" />
+    <ClCompile Include="trx\trx0rec.c" />
+    <ClCompile Include="trx\trx0roll.c" />
+    <ClCompile Include="trx\trx0rseg.c" />
+    <ClCompile Include="trx\trx0sys.c" />
+    <ClCompile Include="trx\trx0trx.c" />
+    <ClCompile Include="trx\trx0undo.c" />
+    <ClCompile Include="usr\usr0sess.c" />
+    <ClCompile Include="ut\ut0byte.c" />
+    <ClCompile Include="ut\ut0dbg.c" />
+    <ClCompile Include="ut\ut0mem.c" />
+    <ClCompile Include="ut\ut0rnd.c" />
+    <ClCompile Include="ut\ut0ut.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug 98|Win32">
+      <Configuration>Debug 98</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release 98|Win32">
+      <Configuration>Release 98</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="TLS_DEBUG|Win32">
+      <Configuration>TLS_DEBUG</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="TLS|Win32">
+      <Configuration>TLS</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{44D9C7DC-6636-4B82-BD01-6876C64017DF}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='TLS|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='TLS_DEBUG|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release 98|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug 98|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='TLS|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='TLS_DEBUG|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release 98|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug 98|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.28127.55</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\debug_obj\</OutDir>
+    <IntDir>.\debug_obj\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug 98|Win32'">
+    <OutDir>.\debug_obj98\</OutDir>
+    <IntDir>.\debug_obj98\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\release_obj\</OutDir>
+    <IntDir>.\release_obj\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release 98|Win32'">
+    <OutDir>.\release_obj98\</OutDir>
+    <IntDir>.\release_obj98\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='TLS_DEBUG|Win32'">
+    <OutDir>.\TLS_DEBUG\</OutDir>
+    <IntDir>.\TLS_DEBUG\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='TLS|Win32'">
+    <OutDir>.\TLS\</OutDir>
+    <IntDir>.\TLS\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../include;../zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>__NT__;_DEBUG;SAFEMALLOC;SAFE_MUTEX;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>.\debug_obj/mysys.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\debug_obj/</AssemblerListingLocation>
+      <ObjectFileName>.\debug_obj/</ObjectFileName>
+      <ProgramDataBaseFileName>.\debug_obj/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <OutputFile>.\debug/mysys.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug 98|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../include;../zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;SAFEMALLOC;SAFE_MUTEX;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>.\debug_obj98/mysys.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\debug_obj98/</AssemblerListingLocation>
+      <ObjectFileName>.\debug_obj98/</ObjectFileName>
+      <ProgramDataBaseFileName>.\debug_obj98/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <OutputFile>.\debug/mysys.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../include;../zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>__NT__;DBUG_OFF;NDEBUG;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>.\release_obj/mysys.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\release_obj/</AssemblerListingLocation>
+      <ObjectFileName>.\release_obj/</ObjectFileName>
+      <ProgramDataBaseFileName>.\release_obj/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <OutputFile>.\release/mysys-nt.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release 98|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../include;../zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DBUG_OFF;NDEBUG;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>.\release_obj98/mysys.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\release_obj98/</AssemblerListingLocation>
+      <ObjectFileName>.\release_obj98/</ObjectFileName>
+      <ProgramDataBaseFileName>.\release_obj98/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <OutputFile>.\release/mysys.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='TLS_DEBUG|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../include;../zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;SAFEMALLOC;SAFE_MUTEX;_WINDOWS;USE_TLS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>.\TLS_DEBUG/mysys.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\TLS_DEBUG/</AssemblerListingLocation>
+      <ObjectFileName>.\TLS_DEBUG/</ObjectFileName>
+      <ProgramDataBaseFileName>.\TLS_DEBUG/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <OutputFile>.\debug/mysys_tls.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='TLS|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../include;../zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DBUG_OFF;NDEBUG;_WINDOWS;NDEBUG;USE_TLS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>.\TLS/mysys.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\TLS/</AssemblerListingLocation>
+      <ObjectFileName>.\TLS/</ObjectFileName>
+      <ProgramDataBaseFileName>.\TLS/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <OutputFile>.\release/mysys_tls.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="array.c" />
+    <ClCompile Include="charset-def.c" />
+    <ClCompile Include="charset.c" />
+    <ClCompile Include="checksum.c" />
+    <ClCompile Include="default.c" />
+    <ClCompile Include="default_modify.c" />
+    <ClCompile Include="errors.c" />
+    <ClCompile Include="hash.c" />
+    <ClCompile Include="list.c" />
+    <ClCompile Include="md5.c" />
+    <ClCompile Include="mf_brkhant.c" />
+    <ClCompile Include="mf_cache.c" />
+    <ClCompile Include="mf_dirname.c" />
+    <ClCompile Include="mf_fn_ext.c" />
+    <ClCompile Include="mf_format.c" />
+    <ClCompile Include="mf_getdate.c" />
+    <ClCompile Include="mf_iocache.c" />
+    <ClCompile Include="mf_iocache2.c" />
+    <ClCompile Include="mf_keycache.c" />
+    <ClCompile Include="mf_keycaches.c" />
+    <ClCompile Include="mf_loadpath.c" />
+    <ClCompile Include="mf_pack.c" />
+    <ClCompile Include="mf_path.c" />
+    <ClCompile Include="mf_qsort.c" />
+    <ClCompile Include="mf_qsort2.c" />
+    <ClCompile Include="mf_radix.c" />
+    <ClCompile Include="mf_same.c" />
+    <ClCompile Include="mf_sort.c" />
+    <ClCompile Include="mf_soundex.c" />
+    <ClCompile Include="mf_strip.c" />
+    <ClCompile Include="mf_tempdir.c" />
+    <ClCompile Include="mf_tempfile.c" />
+    <ClCompile Include="mf_unixpath.c" />
+    <ClCompile Include="mf_wcomp.c" />
+    <ClCompile Include="mf_wfile.c" />
+    <ClCompile Include="mulalloc.c" />
+    <ClCompile Include="my_access.c" />
+    <ClCompile Include="my_aes.c" />
+    <ClCompile Include="my_alarm.c" />
+    <ClCompile Include="my_alloc.c" />
+    <ClCompile Include="my_append.c" />
+    <ClCompile Include="my_bit.c" />
+    <ClCompile Include="my_bitmap.c" />
+    <ClCompile Include="my_chsize.c" />
+    <ClCompile Include="my_clock.c" />
+    <ClCompile Include="my_compare.c" />
+    <ClCompile Include="my_compress.c" />
+    <ClCompile Include="my_conio.c" />
+    <ClCompile Include="my_copy.c" />
+    <ClCompile Include="my_crc32.c" />
+    <ClCompile Include="my_create.c" />
+    <ClCompile Include="my_delete.c" />
+    <ClCompile Include="my_div.c" />
+    <ClCompile Include="my_error.c" />
+    <ClCompile Include="my_file.c" />
+    <ClCompile Include="my_fopen.c" />
+    <ClCompile Include="my_fstream.c" />
+    <ClCompile Include="my_gethwaddr.c" />
+    <ClCompile Include="my_getopt.c" />
+    <ClCompile Include="my_getpagesize.c" />
+    <ClCompile Include="my_getsystime.c" />
+    <ClCompile Include="my_getwd.c" />
+    <ClCompile Include="my_init.c" />
+    <ClCompile Include="my_lib.c" />
+    <ClCompile Include="my_lock.c" />
+    <ClCompile Include="my_lockmem.c" />
+    <ClCompile Include="my_lread.c" />
+    <ClCompile Include="my_lwrite.c" />
+    <ClCompile Include="my_malloc.c" />
+    <ClCompile Include="my_memmem.c" />
+    <ClCompile Include="my_messnc.c" />
+    <ClCompile Include="my_mkdir.c" />
+    <ClCompile Include="my_mmap.c" />
+    <ClCompile Include="my_net.c" />
+    <ClCompile Include="my_once.c" />
+    <ClCompile Include="my_open.c" />
+    <ClCompile Include="my_pread.c" />
+    <ClCompile Include="my_pthread.c" />
+    <ClCompile Include="my_quick.c" />
+    <ClCompile Include="my_read.c" />
+    <ClCompile Include="my_realloc.c" />
+    <ClCompile Include="my_redel.c" />
+    <ClCompile Include="my_rename.c" />
+    <ClCompile Include="my_seek.c" />
+    <ClCompile Include="my_sleep.c" />
+    <ClCompile Include="my_static.c" />
+    <ClCompile Include="my_symlink.c" />
+    <ClCompile Include="my_symlink2.c" />
+    <ClCompile Include="my_sync.c" />
+    <ClCompile Include="my_thr_init.c" />
+    <ClCompile Include="my_wincond.c" />
+    <ClCompile Include="my_windac.c" />
+    <ClCompile Include="my_winthread.c" />
+    <ClCompile Include="my_write.c" />
+    <ClCompile Include="ptr_cmp.c" />
+    <ClCompile Include="queues.c" />
+    <ClCompile Include="raid.cpp" />
+    <ClCompile Include="rijndael.c" />
+    <ClCompile Include="safemalloc.c" />
+    <ClCompile Include="sha1.c" />
+    <ClCompile Include="string.c" />
+    <ClCompile Include="thr_alarm.c" />
+    <ClCompile Include="thr_lock.c" />
+    <ClCompile Include="thr_mutex.c" />
+    <ClCompile Include="thr_rwlock.c" />
+    <ClCompile Include="tree.c" />
+    <ClCompile Include="typelib.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mysys_priv.h" />
+    <ClInclude Include="my_static.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
